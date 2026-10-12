@@ -1,0 +1,10 @@
+fun main() {
+    val likes = 62
+    val word = when {
+        likes % 100 in 11..14 -> "лайков"
+        likes % 10 == 1 -> "лайк"
+        likes % 10 in 2..4 -> "лайка"
+        else -> "лайков"
+    }
+    println("Понравилось $likes $word")
+}
